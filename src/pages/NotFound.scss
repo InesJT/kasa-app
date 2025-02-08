@@ -1,0 +1,41 @@
+// Styles pour la page 404
+.notfound {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+
+  h1 {
+    font-size: 288px;
+    color: #ff4a4a;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 36px;
+    color: #ff6060;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .home {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .notfound {
+    justify-content: space-between;
+    h1 {
+      font-size: 99px;
+    }
+  }
+}

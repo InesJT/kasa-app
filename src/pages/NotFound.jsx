@@ -1,6 +1,17 @@
+import "./NotFound.scss";
+
+import { Link } from "react-router";
+
 const NotFound = () => {
   return (
-    <h1>NotFound </h1>
-  )}
+    <main className="container notfound">
+      <h1>404</h1>
+      <p>Oups! La page demandée n&apos;existe pas.</p>
+      <Link to="/" className="home">
+        Retourner sur la page d&apos;acceuil
+      </Link>
+    </main>
+  );
+};
 
-export default NotFound
+export default NotFound;
