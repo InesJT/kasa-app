@@ -1,0 +1,15 @@
+#root {
+  text-align: center;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
