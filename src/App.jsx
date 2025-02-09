@@ -1,12 +1,13 @@
-import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.scss";
+
+import { BrowserRouter, Route, Routes } from "react-router";
 
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Accommodation from "./pages/Accommodation";
-import NotFound from "./pages/NotFound";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Accommodation from "./pages/accommodation";
+import NotFound from "./pages/error";
 
 const App = () => {
   return (

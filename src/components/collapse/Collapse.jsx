@@ -1,19 +1,20 @@
-import { useState } from "react";
 import "./Collapse.scss";
+
+import { useState } from "react";
 
 const Collapse = ({ item }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   return (
-    <div className="collapseContent">
+    <div className="collapse-content">
       <div className="collapse" onClick={() => setIsCollapsed(!isCollapsed)}>
         {item.title}
         <i
           className={`fa-solid fa-chevron-up ${
-            isCollapsed ? "rotateTop" : "rotateBottom"
+            isCollapsed ? "rotate-top" : "rotate-bottom"
           }`}
         ></i>
       </div>
-      <div className={isCollapsed ? "textClose" : "textOpen"}>
+      <div className={isCollapsed ? "text-close" : "text-open"}>
         <p>{item.content}</p>
       </div>
     </div>

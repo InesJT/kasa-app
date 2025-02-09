@@ -1,9 +1,10 @@
 import "./Card.scss";
+
 import { Link } from "react-router";
 
 const Card = ({ item }) => {
   return (
-    <Link to={`/logement/${item.id}`}>
+    <Link to={`/accommodation/${item.id}`}>
       <div
         className="card"
         style={{

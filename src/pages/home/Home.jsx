@@ -1,11 +1,10 @@
-import Banner from "../components/banner";
-import Card from "../components/card";
-
 import "./Home.scss";
 
-import accommodations from "../db/logements.json";
+import Banner from "/src/components/banner";
+import Card from "/src/components/card";
 
-import bgImage from "../assets/images/banner-home.png";
+import accommodations from "/src/db/accommodations.json";
+import bgImage from "/src/assets/images/banner-home.png";
 
 const Home = () => {
   return (
