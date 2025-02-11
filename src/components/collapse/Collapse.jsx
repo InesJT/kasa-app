@@ -15,7 +15,15 @@ const Collapse = ({ item }) => {
         ></i>
       </div>
       <div className={isCollapsed ? "text-close" : "text-open"}>
-        <p>{item.content}</p>
+        {Array.isArray(item.content) ? (
+          <ul>
+            {item.content.map((element) => (
+              <li key={element}>{element}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{item.content}</p>
+        )}
       </div>
     </div>
   );
