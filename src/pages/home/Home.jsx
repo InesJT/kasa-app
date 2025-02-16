@@ -1,10 +1,10 @@
-import "./Home.scss";
+import './Home.scss';
 
-import Banner from "/src/components/banner";
-import Card from "/src/components/card";
+import Banner from '/src/components/banner';
+import Card from '/src/components/card';
 
-import accommodations from "/src/db/accommodations.json";
-import bgImage from "/src/assets/images/banner-home.png";
+import accommodations from '/src/db/accommodations.json';
+import bgImage from '/src/assets/images/banner-home.png';
 
 const Home = () => {
   return (

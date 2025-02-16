@@ -66,6 +66,9 @@
 }
 
 @media (max-width: 768px) {
+  .accommodation-collapse {
+    width: 100%;
+  }
   .accommodation-info {
     display: flex;
     flex-direction: column;
