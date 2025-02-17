@@ -9,21 +9,20 @@
   font-family: Montserrat;
 
   h1 {
-    font-size: 288px;
+    font-size: 280px;
     color: #ff4a4a;
     margin-bottom: 10px;
   }
 
   p {
-    font-size: 36px;
+    font-size: 35px;
     color: #ff6060;
-    margin-bottom: 20px;
     font-weight: 500;
   }
 
   .home {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 140px 20px;
     color: black;
     text-decoration: underline;
     font-size: 18px;
@@ -35,7 +34,7 @@
   .notfound {
     justify-content: space-between;
     h1 {
-      font-size: 99px;
+      font-size: 100px;
     }
   }
 }

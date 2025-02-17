@@ -10,7 +10,7 @@
 .navigation ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 55px;
 }
 
 .navigation a {
@@ -33,6 +33,9 @@
     width: 90%;
     margin: 20px auto;
 
+    .navigation ul {
+      gap: 25px;
+    }
     .navigation a {
       font-size: 12px;
       text-transform: uppercase;
