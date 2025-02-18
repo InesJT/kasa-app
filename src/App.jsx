@@ -1,13 +1,14 @@
-import "./App.scss";
+import './App.scss';
 
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from 'react-router';
 
-import Header from "./components/header";
-import Footer from "./components/footer";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Accommodation from "./pages/accommodation";
-import NotFound from "./pages/error";
+import Header from './components/header';
+import Footer from './components/footer';
+
+import Home from './pages/home';
+import About from './pages/about';
+import Accommodation from './pages/accommodation';
+import NotFound from './pages/error';
 
 const App = () => {
   return (

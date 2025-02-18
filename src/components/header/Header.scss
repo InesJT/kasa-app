@@ -14,18 +14,17 @@
 }
 
 .navigation a {
-  text-decoration: none;
   color: #000000;
   font-size: 24px;
   font-weight: 500;
 
-  &:hover {
-    text-decoration: underline;
-  }
-
   &.active {
-    text-decoration: underline;
+    text-decoration-line: underline;
   }
+}
+.navigation a:hover,
+a:active {
+  text-decoration-line: underline;
 }
 
 @media (max-width: 768px) {

@@ -1,10 +1,22 @@
-import "./Header.scss";
+import './Header.scss';
 
-import { Link } from "react-router";
+import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router';
 
-import logo from "/src/assets/images/logo.png";
+import logo from '/src/assets/images/logo.png';
 
 const Header = () => {
+  const location = useLocation();
+  const [currentPage, setCurrentPage] = useState('Accueil');
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setCurrentPage('Accueil');
+    } else if (location.pathname === '/about') {
+      setCurrentPage('A propos');
+    } else {
+      setCurrentPage('');
+    }
+  }, [location]);
   return (
     <header className="header">
       <div className="logo">
@@ -13,10 +25,14 @@ const Header = () => {
       <nav className="navigation">
         <ul>
           <li>
-            <Link to="/">Accueil</Link>
+            <Link to="/" className={currentPage === 'Accueil' ? 'active' : ''}>
+              Accueil
+            </Link>
           </li>
           <li>
-            <Link to="/about">A Propos</Link>
+            <Link to="/about" className={currentPage === 'A propos' ? 'active' : ''}>
+              A Propos
+            </Link>
           </li>
         </ul>
       </nav>
